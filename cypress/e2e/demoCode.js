@@ -1,6 +1,8 @@
 /////////////////////////////////////////////////
-// This is a Cypress automatuion suite for NN //
-///////////////////////////////////////////////
+// This is a Cypress automatuion suite for NN  //
+// It contains 5 basic automated test cases    //
+// The SUT is www.UITestingPlayground.com      //
+/////////////////////////////////////////////////
 
 
 //Definition for cypress object cy
