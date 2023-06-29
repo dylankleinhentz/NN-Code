@@ -1,14 +1,18 @@
-pipeline{
+@Library('utils') _
+
+pipeline {
     agent any
-
     tools{nodejs "node"}
-
-    stage('Cypress Test Suite'){
-            steps{
-                git url 'https://github.com/dylankleinhentz/NN-Code.git'
-                bat 'npm install'
-                bat 'npm update'
-                bat 'npm run triggerAllTests-headless'
+    stages {
+        stage ('Test Suite') {
+            steps {
+                script { 
+                    git url 'https://github.com/dylankleinhentz/NN-Code.git'
+                    bat 'npm install'
+                    bat 'npm update'
+                    bat 'npm run triggerAllTests-headless'
+                }
             }
         }
+    }
 }
