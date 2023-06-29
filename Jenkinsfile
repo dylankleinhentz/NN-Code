@@ -1,7 +1,7 @@
-pipeline {
+pipeline{
     agent any
 
-    tools {nodejs "node"}
+    tools{nodejs "node"}
 
     stages{
         stage('Cypress Parallel Test Suite'){
@@ -10,7 +10,7 @@ pipeline {
                         //agent {
                         //   label "remote_node1"
                         //}
-                        steps {
+                        step{
                             git url 'https://github.com/dylankleinhentz/NN-Code.git'
                             bat 'npm install'
                             bat 'npm update'
