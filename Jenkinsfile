@@ -1,5 +1,3 @@
-@Library('utils') _
-
 pipeline {
     agent any
     tools{nodejs "node"}
