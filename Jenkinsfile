@@ -3,7 +3,7 @@ pipeline {
 
     tools {nodejs "node"}
 
-    stage {
+    stages{
         stage('Cypress Parallel Test Suite'){
                 parallel {
                     stage('Slave Node1'){
