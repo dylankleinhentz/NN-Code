@@ -5,7 +5,7 @@ pipeline {
         stage ('Test Suite') {
             steps {
                 //script { 
-                    git url 'https://github.com/dylankleinhentz/NN-Code.git'
+                    git url: 'https://github.com/dylankleinhentz/NN-Code.git'
                     bat 'npm install'
                     bat 'npm update'
                     bat 'npm run triggerAllTests-headless'
